@@ -1,0 +1,74 @@
+body {
+  background: #ffd300!important;
+}
+
+.btn.btn-success.navbar-btn {
+  background: #3879d9;
+  border: 1px solid #013b61;
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#q, body > div.container > div.navbar.navbar-default > div > div.navbar-collapse.collapse > form > input {
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+*[data-scrivito-widget-obj-class="TextWidget"] > div {
+  padding: 10px 25px 5px 25px;
+  background: #fff;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+*[data-scrivito-widget-obj-class="ImageWidget"] img:not(.no_border) {
+  padding: 0;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+.navbar {
+  font-size: 18px;
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif!important;
+  font-weight: 700;
+  border: none!important;
+  padding: 10px 0;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #000;
+  background-color: #eeeeee;
+}
+
+.navbar-default {
+  color: #000;
+  background-color: #eeeeee;
+}
+
+.navbar ul li a {
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif!important;
+  color: #000;
+  font-size: 28px;
+}
+
+body > div.container > div.navbar.navbar-default > div > div.navbar-header > a {
+  color: #000;
+  font-size: 24px;
+}
+
+body > div.container > div.navbar.navbar-default > div > div.navbar-collapse a {
+  color: #000;
+  font-size: 24px;
+}
+
+h3.headline {
+  color: #000;
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+
+.text_widget_content {
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+}

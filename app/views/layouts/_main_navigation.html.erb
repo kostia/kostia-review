@@ -12,7 +12,10 @@
           <span class="icon-bar"></span>
         </button>
 
-        <%= cms_tag(:a, homepage, :headline, class: 'navbar-brand', href: cms_path(homepage)) %>
+        <%= content_tag :a, class: 'navbar-brand', href: cms_path(homepage) do %>
+          <%= image_tag 'http://tstoaddicts.files.wordpress.com/2014/06/donut-loading.png', width: '30px', height: '30px' %>
+          <%= homepage.headline %>
+        <% end %>
       </div>
 
       <div class="navbar-collapse collapse">

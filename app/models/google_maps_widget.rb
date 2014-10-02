@@ -1,2 +1,0 @@
-class GoogleMapsWidget < Widget
-end
