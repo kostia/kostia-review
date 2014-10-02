@@ -1,0 +1,11 @@
+<%= cms_tag(:h1, widget, :headline) %>
+
+<%= cms_tag(:div, widget, :content) %>
+
+<% if link = widget.link_to %>
+  <p>
+    <%= link_to(cms_path(link), class: 'btn btn-primary btn-lg') do %>
+      <%= link.title %>
+    <% end %>
+  </p>
+<% end %>

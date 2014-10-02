@@ -1,0 +1,2 @@
+class GoogleMapsWidget < Widget
+end
