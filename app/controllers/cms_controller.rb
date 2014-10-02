@@ -1,2 +1,3 @@
-class CmsController < Scrivito::DefaultCmsController
+class CmsController < ApplicationController
+  include Scrivito::ControllerActions
 end
