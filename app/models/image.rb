@@ -21,4 +21,8 @@ class Image < Obj
   def image?
     true
   end
+
+  def description_for_editor
+    try(:headline) || super
+  end
 end
