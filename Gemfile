@@ -36,10 +36,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'scrivito_sdk', path: '/Users/kostia/Code/rails_connector/scrivito'
-gem 'scrivito_kickstarter', path: '/Users/kostia/Code/scrivito_kickstarter'
-gem 'scrivito_editors', path: '/Users/kostia/Code/scrivito_editors'
-gem 'scrivito_resourcebrowser', path: '/Users/kostia/Code/scrivito_resourcebrowser'
+gem 'scrivito_sdk', '0.18.1.227.80153530'
+gem 'scrivito_kickstarter'
+gem 'scrivito_editors'
+gem 'scrivito_resourcebrowser'
 
 gem 'better_errors'
 gem 'handlebars_assets', '~> 0.12.0'
@@ -51,7 +51,7 @@ gem 'quiet_assets'
 gem 'therubyracer', require: 'v8'
 gem 'thin'
 gem 'underscore-rails'
-      
+
 
 gem "dotenv-rails", group: [:development, :test]
 gem "gravatar_image_tag"
