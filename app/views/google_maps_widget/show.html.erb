@@ -1,5 +1,5 @@
 <div class="google-maps">
-  <% if inplace_editing_allowed? %>
+  <% if scrivito_editor_authenticated? %>
     <%= cms_tag(:input, widget, :address, type: 'text', data: { editor: 'google-maps' }) %>
   <% end %>
 
