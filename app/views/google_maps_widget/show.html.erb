@@ -1,6 +1,6 @@
 <div class="google-maps">
-  <% if scrivito_editor_authenticated? %>
-    <%= cms_tag(:input, widget, :address, type: 'text', data: { editor: 'google-maps' }) %>
+  <% if scrivito_user %>
+    <%= scrivito_tag(:input, widget, :address, type: 'text', data: { editor: 'google-maps' }) %>
   <% end %>
 
   <div class="map" data-location="<%= widget.address %>"></div>

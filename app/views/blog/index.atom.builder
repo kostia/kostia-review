@@ -3,7 +3,7 @@ atom_feed(language: 'en-US') do |feed|
   feed.updated @posts.first.published_at
 
   @posts.each do |post|
-    feed.entry(post, url: cms_url(post)) do |entry|
+    feed.entry(post, url: scrivito_url(post)) do |entry|
       entry.title post.headline
 
       # create an abstract from the content of text widgets

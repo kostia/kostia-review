@@ -9,6 +9,6 @@
   }());
 <% end %>
 
-<%= link_to(cms_path(post, anchor: 'disqus_thread'), data: { 'disqus-identifier' => post.id }) do %>
+<%= link_to(scrivito_path(post, anchor: 'disqus_thread'), data: { 'disqus-identifier' => post.id }) do %>
   Comments
 <% end %>

@@ -8,13 +8,13 @@
       <% @hits.each do |hit| %>
         <li class="list-group-item">
           <h4>
-            <%= link_to(cms_path(hit)) do %>
-              <%= display_field(hit, :headline) %>
+            <%= link_to(scrivito_path(hit)) do %>
+              <%= scrivito_field(hit, :headline) %>
             <% end %>
           </h4>
 
           <p>
-            <% text = strip_tags(cms_tag(:span, hit, :content) + cms_tag(:span, hit, :main_content)) %>
+            <% text = strip_tags(scrivito_tag(:span, hit, :content) + scrivito_tag(:span, hit, :main_content)) %>
             <% snippet = excerpt(text, @query, radius: 200) || truncate(text, length: 400) %>
             <%= highlight(snippet, @query) %>
           </p>
@@ -25,8 +25,8 @@
               <ol class="breadcrumb">
                 <% breadcrumbs.each do |item| %>
                   <li>
-                    <%= link_to(cms_path(item)) do %>
-                      <%= display_field(item, :headline) %>
+                    <%= link_to(scrivito_path(item)) do %>
+                      <%= scrivito_field(item, :headline) %>
                     <% end %>
                   </li>
                 <% end %>

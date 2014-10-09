@@ -3,11 +3,11 @@
     <div class="panel-heading">
       <span class="glyphicon glyphicon-lock"></span>
 
-      <%= cms_tag(:span, @obj, :headline) %>
+      <%= scrivito_tag(:span, @obj, :headline) %>
     </div>
 
     <div class="panel-body">
-      <%= form_for(:user, url: cms_path(@obj), html: { class: 'form-horizontal', role: 'form' }) do |form| %>
+      <%= form_for(:user, url: scrivito_path(@obj), html: { class: 'form-horizontal', role: 'form' }) do |form| %>
         <%= hidden_field_tag(:return_to, params[:return_to]) %>
 
         <div class="form-group">

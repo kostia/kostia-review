@@ -12,7 +12,7 @@
           <span class="icon-bar"></span>
         </button>
 
-        <%= content_tag :a, class: 'navbar-brand', href: cms_path(homepage) do %>
+        <%= content_tag :a, class: 'navbar-brand', href: scrivito_path(homepage) do %>
           <%= image_tag 'http://tstoaddicts.files.wordpress.com/2014/06/donut-loading.png', width: '30px', height: '30px' %>
           <%= homepage.headline %>
         <% end %>
@@ -22,10 +22,10 @@
         <%= render('layouts/search', search_page: homepage.search_page, query: params[:q]) %>
         <%= render('layouts/login', login_page: homepage.login_page, current_user: current_user) %>
 
-        <%= cms_tag_list(:ul, homepage, :toclist, class: 'nav navbar-nav', id: 'main_nav') do |list, obj| %>
-          <% list.tag(:li, id: "main_nav_page_#{obj.id}", data: { path: obj.path }) do %>
-            <%= link_to(cms_path(obj)) do %>
-              <%= display_field(obj, :headline) %>
+        <%= scrivito_tag_list(:ul, homepage, :toclist, class: 'nav navbar-nav', id: 'main_nav') do |list, obj| %>
+          <%= list.tag(:li, id: "main_nav_page_#{obj.id}", data: { path: obj.path }) do %>
+            <%= link_to(scrivito_path(obj)) do %>
+              <%= scrivito_field(obj, :headline) %>
             <% end %>
           <% end %>
         <% end %>

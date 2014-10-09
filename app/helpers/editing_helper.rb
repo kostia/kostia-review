@@ -1,5 +1,5 @@
 module EditingHelper
-  def cms_edit_enum(object, attribute_name, options = {})
+  def scrivito_edit_enum(object, attribute_name, options = {})
     values = object.obj_class.attributes[attribute_name].values
 
     options.reverse_merge!({
@@ -10,10 +10,10 @@ module EditingHelper
       }
     })
 
-    cms_tag(:div, object, attribute_name, options)
+    scrivito_tag(:div, object, attribute_name, options)
   end
 
-  def cms_edit_multienum(object, attribute_name, options = {})
+  def scrivito_edit_multienum(object, attribute_name, options = {})
     values = object.obj_class.attributes[attribute_name].values
 
     options.reverse_merge!({
@@ -23,7 +23,7 @@ module EditingHelper
       }
     })
 
-    cms_tag(:div, object, attribute_name, options) do |tag|
+    scrivito_tag(:div, object, attribute_name, options) do |tag|
       (object[attribute_name] || []).join(', ')
     end
   end
@@ -34,10 +34,10 @@ module EditingHelper
   # @param [Obj] object the cms object with a referencelist attribute
   # @param [String] attribute_name the name of the referencelist attribute
   # @param [Hash] options html options passed to the tag method
-  def cms_edit_referencelist(object, attribute_name, options = {})
+  def scrivito_edit_referencelist(object, attribute_name, options = {})
     reference_list = object.send(attribute_name)
 
-    cms_tag(:div, object, attribute_name, options) do
+    scrivito_tag(:div, object, attribute_name, options) do
       if reference_list.present?
         content_tag(:ul) do
           html = ''.html_safe
@@ -60,10 +60,10 @@ module EditingHelper
   # @param [Obj] object the cms object with a linklist attribute
   # @param [String] attribute_name the name of the linklist attribute
   # @param [Hash] options html options passed to the tag method
-  def cms_edit_linklist(object, attribute_name, options = {})
+  def scrivito_edit_linklist(object, attribute_name, options = {})
     linklist = object.send(attribute_name)
 
-    cms_tag(:div, object, attribute_name, options) do
+    scrivito_tag(:div, object, attribute_name, options) do
       content_tag(:ul) do
         html = ''.html_safe
 
@@ -83,10 +83,10 @@ module EditingHelper
     end
   end
 
-  def cms_edit_link(object, attribute_name, options = {})
+  def scrivito_edit_link(object, attribute_name, options = {})
     link = object.send(attribute_name)
 
-    cms_tag(:div, object, attribute_name, options) do
+    scrivito_tag(:div, object, attribute_name, options) do
         url = link && link.internal? ? "/#{link.obj.id}" : link.try(:url)
         title = link.try(:title)
 

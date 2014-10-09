@@ -7,7 +7,7 @@
         <% end %>
 
         <div class="media-body">
-          <%= cms_tag(:h2, @obj, :headline, class: 'media-heading') %>
+          <%= scrivito_tag(:h2, @obj, :headline, class: 'media-heading') %>
 
           <% if @obj.published_at.present? %>
             <%= render('published_at', post: @obj) %>

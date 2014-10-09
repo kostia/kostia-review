@@ -5,11 +5,11 @@
 
   <div class="media-body">
     <h5 class="media-heading">
-      <%= link_to(cms_path(short_post)) do %>
-        <%= cms_tag(:span, short_post, :headline) %>
+      <%= link_to(scrivito_path(short_post)) do %>
+        <%= scrivito_tag(:span, short_post, :headline) %>
       <% end %>
     </h5>
   </div>
 </div>
 
-<%= truncate(strip_tags(cms_tag(:div, short_post, :main_content)), length: 150) %>
+<%= truncate(strip_tags(scrivito_tag(:div, short_post, :main_content)), length: 150) %>

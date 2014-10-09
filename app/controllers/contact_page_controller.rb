@@ -5,7 +5,7 @@ class ContactPageController < CmsController
     if request.post? && @contact_page_presenter.valid?
       ContactMailer.contact_email(@contact_page_presenter.attributes).deliver
 
-      redirect_to(cms_path(@obj), notice: 'The contact form was sent successfully.')
+      redirect_to(scrivito_path(@obj), notice: 'The contact form was sent successfully.')
     end
   end
 end
