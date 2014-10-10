@@ -1,3 +1,17 @@
+PATH
+  remote: /Users/kostia/Code/rails_connector/scrivito
+  specs:
+    scrivito_sdk (0.18.1.268.226258808)
+      addressable (~> 2.3.2)
+      diff-lcs (~> 1.2.5)
+      hyp_diff (~> 0.0.3)
+      jquery-rails (~> 3.1.1)
+      json (>= 1.7.7)
+      nokogiri (~> 1.5.6)
+      rails (~> 4.1.1)
+      rake (>= 0.9.2.2)
+      rest-client (~> 1.6.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -153,16 +167,6 @@ GEM
       coffee-rails
       railties
       scrivito_sdk
-    scrivito_sdk (0.18.1.229.216224197)
-      addressable (~> 2.3.2)
-      diff-lcs (~> 1.2.5)
-      hyp_diff (~> 0.0.3)
-      jquery-rails (~> 3.1.1)
-      json (>= 1.7.7)
-      nokogiri (~> 1.5.6)
-      rails (~> 4.1.1)
-      rake (>= 0.9.2.2)
-      rest-client (~> 1.6.7)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -221,7 +225,7 @@ DEPENDENCIES
   scrivito_editors
   scrivito_kickstarter
   scrivito_resourcebrowser
-  scrivito_sdk (= 0.18.1.229.216224197)
+  scrivito_sdk!
   sdoc (~> 0.4.0)
   spring
   therubyracer
