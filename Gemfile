@@ -36,11 +36,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-if ENV['LOCAL']
-  gem 'scrivito_sdk', path: '/Users/kostia/Code/rails_connector/scrivito'
-else
-  gem 'scrivito_sdk', '0.18.1.229.216224197'
-end
+gem 'scrivito_sdk', path: '/Users/kostia/Code/rails_connector/scrivito'
 
 gem 'scrivito_kickstarter'
 gem 'scrivito_editors'

@@ -1,3 +1,6 @@
 <%= scrivito_image_tag widget, :source, title: widget.source.try(:headline),
                   class: "#{widget.try(:css_class)} img-responsive image-widget-#{widget.try(:align)}",
                   data: {filter: 'images'} %>
+<% if widget.source %>
+  <span><%= number_to_human_size widget.source.body_length %></span>
+<% end %>

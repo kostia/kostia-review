@@ -1,7 +1,7 @@
 PATH
   remote: /Users/kostia/Code/rails_connector/scrivito
   specs:
-    scrivito_sdk (0.18.1.268.226258808)
+    scrivito_sdk (0.18.1.278.139705502)
       addressable (~> 2.3.2)
       diff-lcs (~> 1.2.5)
       hyp_diff (~> 0.0.3)
