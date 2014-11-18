@@ -1,6 +1,7 @@
 /*
  *= require scrivito
  *= require scrivito_editors
- *= require scrivito_resourcebrowser
+ *= require scrivito_content_browser
+ *= require jquery.minicolors
  *= require_tree .
  */

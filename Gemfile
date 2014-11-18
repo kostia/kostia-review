@@ -38,10 +38,8 @@ gem 'spring',        group: :development
 
 gem 'scrivito', path: '/Users/kostia/Code/scrivito/scrivito'
 gem 'scrivito_sdk', path: '/Users/kostia/Code/scrivito/scrivito_sdk'
-
-gem 'scrivito_kickstarter'
-gem 'scrivito_editors'
-gem 'scrivito_resourcebrowser'
+gem 'scrivito_editors', path: '/Users/kostia/Code/scrivito/scrivito_editors'
+gem 'scrivito_content_browser', path: '/Users/kostia/Code/scrivito/scrivito_content_browser'
 
 gem 'better_errors'
 gem 'handlebars_assets', '~> 0.12.0'
@@ -59,3 +57,4 @@ gem "dotenv-rails", group: [:development, :test]
 gem "gravatar_image_tag"
 gem "momentjs-rails"
 gem 'secure_headers'
+gem 'jquery-minicolors-rails'
